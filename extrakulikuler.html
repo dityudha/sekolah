@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Ekstrakulikuler - SMK Informatika Jakarta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+	<meta name="description" content="Website Description" />
+	<meta name="keywords" content="Website Keywords" />
+    <link rel="icon" href="favicon.jpg" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" media="all" href="style/style.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="style/prettyPhoto.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,900' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" media="all" href="style/stylemobile.css" />
+	<!-- <link rel="stylesheet" type="text/css" media="all" href="style/mobilenavigation.css" /> -->
+	<script src="script/modernizr.js" type="text/javascript"></script>
+	<script src="script/jquery.js" type="text/javascript"></script>
+    <script src="script/jquery-ui.js" type="text/javascript"></script>
+	<script src="script/jquery.flexslider.js" type="text/javascript"></script>
+	<script src="script/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="script/jquery.retina.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+        $(window).scroll(function () {
+            if ($(document).scrollTop() <= 40) {
+                $('#header-full').removeClass('small');
+                $('.tabs-blur').removeClass('no-blur');
+                $('#main-header').removeClass('small');
+            } else {
+                $('#header-full').addClass('small');
+                $('.tabs-blur').addClass('no-blur');
+                $('#main-header').addClass('small');
+            }
+        });
+        
+        $("a[data-rel^='prettyPhoto']").prettyPhoto({
+			default_width: 600,
+			default_height: 420,
+			social_tools: false
+		});
+        $('#slideshow-tabs').tabs({ show: { effect: "fade", duration: 200 }, hide: { effect: "fade", duration: 300 } });
+        $('#tabs-content-bottom').tabs({ show: { effect: "fade", duration: 200 }, hide: { effect: "fade", duration: 300 } });
+        $('.slider-tabs.flexslider').flexslider({
+            animation: "slide",
+            pauseOnAction: true
+        });
+        $('.slider-partners.flexslider').flexslider({
+            animation: "slide",
+            pauseOnAction: true,
+            itemWidth: 163,
+            itemMargin: 0
+        });
+		$('a[data-rel]').each(function() {
+			$(this).attr('rel', $(this).data('rel'));
+		});
+		$('img[data-retina]').retina({checkIfImageExists: true});
+		$(".open-menu").click(function(){
+		    $("body").addClass("no-move");
+		});
+		$(".close-menu, .close-menu-big").click(function(){
+		    $("body").removeClass("no-move");
+		});
+	});
+	</script>
+</head>
+<body>
+	<header id="main-header" class="clearfix">
+        <div id="header-full" class="clearfix">
+            <div id="header" class="clearfix">
+                <a href="#nav" class="open-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a href="index.html" id="logo"><img src="images/logo.png" data-retina="images/logo-retina.png" alt="School Fun - WordPress Theme" /></a>
+                <aside id="header-content">
+                    <h3 id="slogan" style="margin-top: 50px;">"Fun. Study. Research. Innovate. Play"</h3>
+                </aside>
+            </div>
+        </div>
+        <nav id="nav" class="clearfix">
+            <a href="#" class="close-menu-big">Close</a>
+            <div id="nav-container">
+                <a href="#" class="close-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <ul id="nav-main">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a>
+                        <ul>
+                            <li><a href="sejarah.html">Sejarah</a></li>
+                            <li><a href="visi-misi.html">Visi & Misi</a></li>
+                            <li><a href="profil.html">Sambutan Kepala Sekolah</a></li>
+                            <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="fasilitas.html">Sekolah</a>
+                        <ul>
+                            <li><a href="fasilitas.html">Fasilitas</a></li>
+                            <li><a href="kurikulum.html">Kurikulum</a></li>
+                            <li><a href="extrakulikuler.html">Extra Kulikuler</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak Sekolah</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="content-container">
+        <div id="content" class="clearfix">
+            <div id="main-content">
+                <div id="breadcrumbs" class="clearfix">
+                    <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="index.html" itemprop="url" class="icon-home">
+                            <span itemprop="title">Home</span>
+                        </a> <span class="arrow">&gt;</span>
+                    </div>  
+                    <span class="last-breadcrumbs">
+                       Extra Kulikuler
+                    </span>
+                </div>
+                <article class="static-page">
+                    <h1 id="main-title"><font color="black">Kegiatan Extrakulikuler Sekolah</font></h1>
+
+                    <h3><font color="black">Sepak Bola</font></h3>
+                    <img src="images/ekskul/bola.jpg" width="640" height="360">
+                      <figcaption>Ekskul yang berfokus kepada pengembangan skill bermain sepak bola.</figcaption> 
+
+                    <h3><font color="black">Futsal</font></h3>
+                    <img src="images/ekskul/futsal.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus kepada pengembangan skill bermain futsal.</figcaption> 
+
+                    <h3><font color="black">Basket</font></h3>
+                    <img src="images/ekskul/basket.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus kepada pengembangan skill bermain basket.</figcaption> 
+
+                    <h3><font color="black">Martial Arts</font></h3>
+                    <img src="images/ekskul/beladiri.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus kepada pelatihan bela diri dan juga pengembangan mental.</figcaption> 
+
+                    <h3><font color="black">Paskibra</font></h3>
+                    <img src="images/ekskul/paskibra.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus kepada pelatihan untuk menjadi paskibra yang handal.</figcaption> 
+                    
+                    <h3><font color="black">Pramuka</font></h3>
+                    <img src="images/ekskul/pramuka.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus kepada pengembangan diri dan juga pelatihan kepramukaan dan juga pecinta alam.</figcaption> 
+
+                    <h3><font color="black">Web Design</font></h3>
+                    <img src="images/ekskul/webdesign.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus kepada pengembangan skill developing sebuah web untuk sebuah perusahaan/perorangan.</figcaption> 
+
+                    <h3><font color="black">Robotik</font></h3>
+                    <img src="images/ekskul/robotik.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus kepada pengembangan perangkat robotik baik dari segi hardware maupun software nya.</figcaption> 
+
+                    <h3><font color="black">Game Developer</font></h3>
+                    <img src="images/ekskul/gamedev.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus kepada pengembangan sebuah game dasar berbasis mobile.</figcaption> 
+
+                    <h3><font color="black">E-Sports</font></h3>
+                    <img src="images/ekskul/esport.jpg" width="640" height="360"> 
+                    <figcaption>Ekskul yang berfokus mencari kandidat game players terbaik untuk diberikan pelatihan dan menjadi peserta perwakilan sekolah untuk mengikuti ajang tournament E-sports.</figcaption> 
+             
+                </article>
+            </div>
+            <div id="sidebar">
+                <aside class="widget-container">
+                    <div class="widget-wrapper clearfix">
+                        <h3 class="widget-title">Berita Terbaru</h3>
+                        <ul class="menu news-sidebar">          
+                            <li class="clearfix">
+                                <img src="images/Berita/berita-1.jpg" data-retina="images/img-4-retina.jpg" alt="We Sent our Student to Himalaya to Study and Hiking" class="imgframe alignleft" />
+                                <h4><a href="berita-detail-1.html">Penghargaan untuk siswa dan siswi smk jakarta</a></h4>
+                                <span class="date-news">11 Maret 2018</span>
+                            </li>
+                            <li class="clearfix">
+                                <img src="images/Berita/berita-2.jpg" data-retina="images/img-5-retina.jpg" alt="We are opening Modelling Night Course" class="imgframe alignleft" />
+                                <h4><a href="berita-detail-2.html">Peringatan HUT SMK INFORMATIKA JAKARTA</a></h4>
+                                <span class="date-news">4 Februari 2018</span>
+                            </li>
+                            <li class="clearfix">
+                                <img src="images/Berita/berita--7.jpg" data-retina="images/img-6-retina.jpg" alt="Photography Club 120 Year Birthday Beach Party" class="imgframe alignleft" />
+                                <h4><a href="berita-detail-3.html">Nissan Edukasi Siswa jurusan TKR SMK Jakarta di IIMS 2017</a></h4>
+                                <span class="date-news">2 Februari 2018</span>
+                            </li>
+                            <li class="clearfix">
+                                <img src="images/Berita/berita-6.jpg" data-retina="images/img-7-retina.jpg" alt="Photography Club 120 Year Birthday Beach Party" class="imgframe alignleft" />
+                                <h4><a href="berita-detail-4.html">Wali kota jaktim Tinjau persiapan UNBK di SMK INFORMATIKA</a></h4>
+                                <span class="date-news">20 Januari 2018</span>
+                            </li>
+                        </ul>
+                        <a href="berita.html" class="button-more">Berita Selengkapnya</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <footer id="main-footer" style="background:url(images/img-8.jpg) no-repeat 50% 0;">
+        <div id="blur-top">
+            <a href="#" id="link-back-top">Back to Top</a>
+        </div>
+        <div id="slogan-footer">
+            <h4>Leading Together <span>for</span> Brighter Future</h4>
+        </div>
+        <div id="footer-content" class="clearfix">
+            <div id="footer-container">
+                <div id="sidebar-footer-left" class="sidebar-footer">
+                    <aside class="widget-container">
+                        <div class="widget-wrapper clearfix">
+                            <h3 class="widget-title">Link Informasi</h3>
+                            <ul>
+                                <li><a href="berita.html">Berita</a></li>
+                                <li><a href="kurikulum.html">Kurikulum</a></li>
+                                <li><a href="fasilitas.html">Fasilitas</a></li>
+                                <li><a href="extrakulikuler.html">Ekstrakulikuler</a></li>
+                                <li><a href="galeri.html">Galeri</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div id="sidebar-footer-middle" class="sidebar-footer">
+                    <aside class="widget-container">
+                        <div class="widget-wrapper clearfix">
+                            <h3 class="widget-title">Lokasi Sekolah</h3>        
+                            <article class="text-widget ">
+                               <iframe class="map-area" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28186188155!2d106.75930630298996!3d-6.229571206252765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C+Daerah+Khusus+Ibukota+Jakarta!5e0!3m2!1sid!2sid!4v1525178848253"></iframe><br />
+                           </article>
+                        </div>
+                    </aside>
+                </div>
+                <article id="footer-address" class="clearfix">
+                    <h3 id="title-footer-address"><span>Sosial Media SMK Informatika</span></h3>
+                    <p>Untuk update informasi SMK Informatika juga melalui media sosial, di bawah ini link beberapa sosial media yang aktif kami update</p>
+                    <ul id="list-social" class="clearfix">
+                        <li id="icon-facebook"><a href="https://facebook.com">Facebook</a></li>
+                        <li id="icon-twitter"><a href="https://twitter.com">Twitter</a></li>
+                        <li id="icon-gplus"><a href="https://google.com">Google Plus</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            <div id="footer-copyright-content" class="clearfix">
+                <a href="#" id="logo-footer"><img src="images/logo-footer.png" data-retina="images/logo-footer-retina.png" alt="School Fun - University" /></a>
+                <ul id="nav-footer" class="clearfix">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="fasilitas.html">Fasilitas</a></li>
+                    <li><a href="kontak.html">Kontak Kami</a></li>
+                </ul>
+                <p id="text-copyright">&copy; SMK Informatika 2018</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

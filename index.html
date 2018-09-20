@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from kepelaminan.com/template/schoolfun/maroon/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 May 2018 04:01:18 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<title>Beranda - SMK Informatika Jakarta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+	<meta name="description" content="Website Description" />
+	<meta name="keywords" content="Website Keywords" />
+    <link rel="icon" href="favicon.jpg" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" media="all" href="style/style.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="style/prettyPhoto.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,900' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" media="all" href="style/stylemobile.css" />
+	<!-- <link rel="stylesheet" type="text/css" media="all" href="style/mobilenavigation.css" /> -->
+	<script src="script/modernizr.js" type="text/javascript"></script>
+	<script src="script/jquery.js" type="text/javascript"></script>
+    <script src="script/jquery-ui.js" type="text/javascript"></script>
+	<script src="script/jquery.flexslider.js" type="text/javascript"></script>
+	<script src="script/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="script/jquery.retina.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+        $(window).scroll(function () {
+            if ($(document).scrollTop() <= 40) {
+                $('#header-full').removeClass('small');
+                $('.tabs-blur').removeClass('no-blur');
+                $('#main-header').removeClass('small');
+            } else {
+                $('#header-full').addClass('small');
+                $('.tabs-blur').addClass('no-blur');
+                $('#main-header').addClass('small');
+            }
+        });
+        
+        $("a[data-rel^='prettyPhoto']").prettyPhoto({
+			default_width: 600,
+			default_height: 420,
+			social_tools: false
+		});
+        $('#slideshow-tabs').tabs({ show: { effect: "fade", duration: 200 }, hide: { effect: "fade", duration: 300 } });
+        $('.slider-tabs.flexslider').flexslider({
+            animation: "slide",
+            pauseOnAction: true,
+        });
+		$('a[data-rel]').each(function() {
+			$(this).attr('rel', $(this).data('rel'));
+		});
+		$('img[data-retina]').retina({checkIfImageExists: true});
+		$(".open-menu").click(function(){
+		    $("body").addClass("no-move");
+		});
+		$(".close-menu, .close-menu-big").click(function(){
+		    $("body").removeClass("no-move");
+		});
+	});
+	</script>
+</head>
+<body class="home">
+	<header id="main-header" class="clearfix">
+        <div id="header-full" class="clearfix">
+            <div id="header" class="clearfix">
+                <a href="#nav" class="open-menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				</a>
+                <a href="index.html" id="logo"><img src="images/logo.png" data-retina="images/logo-retina.png" alt="School Fun - WordPress Theme" /></a>
+                <aside id="header-content">
+                    <h3 id="slogan" style="margin-top: 50px;">"Fun. Study. Research. Innovate. Play"</h3>
+                </aside>
+            </div>
+        </div>
+        <nav id="nav" class="clearfix">
+            <a href="#" class="close-menu-big">Close</a>
+            <div id="nav-container">
+                <a href="#" class="close-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <ul id="nav-main">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a>
+                        <ul>
+                            <li><a href="sejarah.html">Sejarah</a></li>
+                            <li><a href="visi-misi.html">Visi & Misi</a></li>
+                            <li><a href="profil.html">Sambutan Kepala Sekolah</a></li>
+                            <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="fasilitas.html">Sekolah</a>
+                        <ul>
+                            <li><a href="fasilitas.html">Fasilitas</a></li>
+                            <li><a href="kurikulum.html">Kurikulum</a></li>
+                            <li><a href="extrakulikuler.html">Extra Kulikuler</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak Sekolah</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="slideshow-tabs">
+        <div id="panel-tabs" class="clearfix">
+            <ul class="nav-tabs-slideshow">
+                <li><a href="#panel-1"><strong>Sekolah</strong><br />
+                    <span>Study Hard. Play Hard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#panel-2"><strong>Prestasi</strong><br />
+                    <span>Prestasi SMK Informatika</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#panel-3"><strong>Fasilitas</strong><br />
+                    <span>Fasilitas SMK Informatika</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#panel-4"><strong>Berita</strong><br />
+                    <span>Berita Sekolah</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+		<div class="ui-tabs-panel" id="panel-1" style="background:url(images/sekolah.jpg) no-repeat 50% 0;background-size: cover;">
+            <div class="tabs-blur" style="background:url(images/sekolah.jpg) no-repeat 50% 0">
+            </div>
+        </div>
+        <div class="ui-tabs-panel" id="panel-2" style="background:url(images/prestasi.jpg) no-repeat 50% 0;background-size: cover;">
+            <div class="tabs-blur" style="background:url(images/prestasi.jpg) no-repeat 50% 0">
+            </div>
+        </div>
+        <div class="ui-tabs-panel" id="panel-3" style="background:url(images/fasilitas.jpg) no-repeat 50% 0;background-size: cover;">
+            <div class="tabs-blur" style="background:url(images/fasilitas.jpg) no-repeat 50% 0">
+            </div>
+        </div>
+        <div class="ui-tabs-panel" id="panel-4" style="background:url(images/berita.jpg) no-repeat 50% 0;background-size: cover;">
+            <div class="tabs-blur" style="background:url(images/berita.jpg) no-repeat 50% 0">
+            </div>
+            <div class="tabs-container">
+                <div class="slider-tabs flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="slider-tabs-content">
+				                <h3><a href="berita-detail-1.html">Penghargaan untuk siswa dan siswi smk jakarta</a></h3>
+                                <time datetime="2013-11-30">11 Maret 2018</time>
+                                <p>Selamat untuk mereka yang sudah meraih penghargaan siswa dan siswi terbaik untuk Tahun Pelajaran 2017-2018</p>
+                            </div>
+                        </li>
+                        <li>
+				            <div class="slider-tabs-content">
+				                <h3><a href="berita-detail-5.html">Ini kondisi UNBK 2017 di SMK Informatika Jakarta</a></h3>
+                                <time datetime="2013-11-18">18 November 2017</time>
+                                <p>Jakarta - UNBK 2017 sedang digelar, termasuk di SMK, Jakarta. "Alhamdulillah pelaksanaan UNBK di sekolah ini berjalan lancar, kebetulan di SMK ini semuanya menggunakan komputer,".</p>
+                            </div>
+                        </li>
+					</ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content-container">
+        <div id="content" class="clearfix">
+            <div id="main-content">
+                <article id="intro">
+                    <h1>Selamat Datang di website SMK Informatika Jakarta</h1>
+                    <figure><img src="images/home-sekolah.jpeg" alt="Selamat Datang di website SMK Informatika Jakarta" /></figure>
+                    <p>SMK Informatika Jakarta sebagai sekolah di bidang informatika senantiasa berkomitmen penuh sungguh-sungguh dalam memberikan layanan jasa pendidikan terbaik, untuk jenjang pendidikan sekolah menengah kejuruan dengan kurikulum yang inovatif, pembelajaran yang progesif dan fleksible, serta pendekatan nilai-nilai akademik yang tinggi.</p>
+                </article>
+                <div id="sidebar-homepage-left" class="sidebar-homepage">
+                    <aside class="widget-container">
+				        <div class="widget-wrapper clearfix">
+                            <h3 class="widget-title">Berita Terbaru</h3>
+                            <ul class="menu news-sidebar">          
+                                <li class="clearfix">
+                                    <img src="images/Berita/berita-1.jpg" data-retina="images/img-4-retina.jpg" alt="We Sent our Student to Himalaya to Study and Hiking" class="imgframe alignleft" />
+                                    <h4><a href="berita-detail-1.html">Penghargaan untuk siswa dan siswi smk jakarta</a></h4>
+                                    <span class="date-news">11 Maret 2018</span>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="images/Berita/berita-2.jpg" data-retina="images/img-5-retina.jpg" alt="We are opening Modelling Night Course" class="imgframe alignleft" />
+                                    <h4><a href="berita-detail-2.html">Peringatan HUT SMK INFORMATIKA JAKARTA</a></h4>
+                                    <span class="date-news">4 Februari 2018</span>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="images/Berita/berita--7.jpg" data-retina="images/img-6-retina.jpg" alt="Photography Club 120 Year Birthday Beach Party" class="imgframe alignleft" />
+                                    <h4><a href="berita-detail-3.html">Nissan Edukasi Siswa jurusan TKR SMK Jakarta di IIMS 2017</a></h4>
+                                    <span class="date-news">2 Februari 2018</span>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="images/Berita/berita-6.jpg" data-retina="images/img-7-retina.jpg" alt="Photography Club 120 Year Birthday Beach Party" class="imgframe alignleft" />
+                                    <h4><a href="berita-detail-4.html">Wali kota jaktim Tinjau persiapan UNBK di SMK INFORMATIKA</a></h4>
+                                    <span class="date-news">20 Januari 2018</span>
+                                </li>
+                            </ul>
+                        </div>
+				    </aside>
+                </div>
+                <div id="sidebar-homepage-middle" class="sidebar-homepage">
+                    <aside class="widget-container">
+				        <div class="widget-wrapper clearfix">
+                        <h3 class="widget-title">Event Terbaru</h3>
+                        <ul class="menu event-sidebar">         
+                            <li class="clearfix">
+                                <div class="event-date-widget">
+                                    <strong>28</strong>
+                                    <span>Nov</span>
+                                </div>
+                                <div class="event-content-widget">
+                                    <article>
+                                        <h4>Festival Musik 2018</h4>
+                                        <p>
+                                            9:00 AM - 10:00 AM
+                                        </p>
+                                        <em>Auditorium Sekolah</em>
+                                    </article>
+                                    <article>
+                                        <h4>HTML5 &amp; CSS3 Workshop</h4>
+                                        <p>
+                                            11:00 AM - 1:00 PM
+                                        </p>
+                                        <em>Ruang IT Center</em>
+                                    </article>
+                                    <article>
+                                        <h4>Test TOEFL &amp; IBT Gratis</h4>
+                                        <p>
+                                            2:00 PM - 2:00 PM
+                                        </p>
+                                        <em>Ruang kelas B.Inggris</em>
+                                    </article>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="event-date-widget">
+                                    <strong>25</strong>
+                                    <span>Nov</span>
+                                </div>
+                                <div class="event-content-widget">
+                                    <article>
+                                        <h4>Festival kuliner 2018</h4>
+                                        <p>
+                                            9:00 AM - 10:00 AM
+                                        </p>
+                                        <em>Kantin sekolah</em>
+                                    </article>
+                                    <article>
+                                        <h4>Festival tahunan</h4>
+                                        <p>
+                                            8:00 AM - 9:00 AM
+                                        </p>
+                                        <em>Lapangan Basket</em>
+                                    </article>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+				    </aside>
+                </div>
+            </div>
+            <div id="sidebar-homepage-right" class="sidebar-homepage">
+                <ul id="nav-sidebar" class="clearfix">
+                    <li><a href="kontak.html" class="clearfix">
+                        <figure><img src="images/icon-sidebar-1.png" alt="Contact Us" /></figure>
+                        <strong class="title-nav-sidebar">Kontak Sekolah</strong>
+                        <strong>Phone:</strong> <span style="margin-right:80px">+62 132342343 </span><strong>Fax:</strong> +62 45677896233
+                        </a></li>
+                    <li><a href="kontak.html" class="clearfix">
+                        <figure><img src="images/icon-sidebar-2.png" alt="Location" /></figure>
+                        <strong class="title-nav-sidebar">Lokasi Sekolah</strong>
+                        Jalan Soekarno Hatta No. 2 Jakarta, Indonesia
+                        </a></li>
+                    <li><a href="fasilitas.html" class="clearfix">
+                        <figure><img src="images/icon-sidebar-4.png" alt="Library and Research" /></figure>
+                        <strong class="title-nav-sidebar">Fasilitas</strong>
+                        Informasi mengenai fasilitas sekolah
+                        </a></li>
+                     <li><a href="kurikulum.html" class="clearfix">
+                        <figure><img src="images/icon-sidebar-5.png" alt="Library and Research" /></figure>
+                        <strong class="title-nav-sidebar">Kurikulum</strong>
+                        Kurikulum dari SMK Informatika Jakarta
+                        </a></li>
+                </ul>
+                <aside id="gw_gallery-5" class="widget-container widget_gw_gallery">
+                <div class="widget-wrapper clearfix">
+                    <h3 class="widget-title">Photo Gallery</h3>  
+                    <script type="text/javascript">
+				        jQuery(document).ready(function($){
+				            $("#gw_gallery-5-slide").flexslider({
+								animation: "slide",
+								animationLoop: false,
+								pauseOnAction: true
+				            });
+				        });
+				    </script>
+                    <div id="gw_gallery-5-slide" class="flexslider">
+                        <ul class="slides">
+				            <li>
+				                <div class="slides-image">
+				                    <a href="images/tkj.png" data-rel="prettyPhoto[pp-gw_gallery-5]"><img src="images/tkj.png" alt="Beauty in Green"  data-retina="images/tkj.png" /></a>
+								</div>
+                                <h4><a href="images/tkj.png" data-rel="prettyPhoto[pp-gw_gallery-5-slide]">Kegiatan Belajar Kelas TKJ</a></h4>
+				            </li>
+				            <li>
+				                <div class="slides-image">
+				                    <a href="images/belajar-mengajar.jpg" data-rel="prettyPhoto[pp-gw_gallery-5]"><img src="images/belajar-mengajar.jpg" alt="Choose your future jobs correctly"  data-retina="images/belajar-mengajar.jpg" /></a>
+				                </div>
+                                <h4><a href="images/belajar-mengajar.jpg" data-rel="prettyPhoto[pp-gw_gallery-5-slide]">Kegiatan Belajar Mengajar</a></h4>
+				            </li>
+                            <li>
+                                <div class="slides-image">
+                                    <a href="images/hiking.jpg" data-rel="prettyPhoto[pp-gw_gallery-5]"><img src="images/hiking.jpg" alt="Choose your future jobs correctly"  data-retina="images/hiking.jpg" /></a>
+                                </div>
+                                <h4><a href="images/hiking.jpg" data-rel="prettyPhoto[pp-gw_gallery-5-slide]">Kegiatan Hiking ke Semeru</a></h4>
+                            </li>
+				        </ul>
+                    </div>
+                </div>
+            </aside>
+            </div>
+            <article id="intro-principal" class="static-page">
+                <h3 id="title-principal"><strong>DRA. Shemira, M.Psi -</strong> Sambutan dari Kepala Sekolah</h3>
+                <div id="content-principal">
+                    <p>SMK Informatika Jakarta sebagai sekolah di bidang informatika senantiasa berkomitmen penuh sungguh-sungguh dalam memberikan layanan jasa pendidikan terbaik, untuk jenjang pendidikan sekolah menengah kejuruan dengan kurikulum yang inovatif, pembelajaran yang progesif dan fleksible, serta pendekatan nilai-nilai akademik yang tinggi dan life long education and humanity dengan didukung sarana prasarana sekolah yang semakin baik.</p>
+                    <p><a href="about.html" class="more-intro">- Selanjutnya</a></p>
+                </div>
+            </article>
+        </div>
+    </div>
+    <footer id="main-footer" style="background:url(images/img-8.jpg) no-repeat 50% 0;">
+        <div id="blur-top">
+            <a href="#" id="link-back-top">Back to Top</a>
+        </div>
+        <div id="slogan-footer">
+            <h4>Leading Together <span>for</span> Brighter Future</h4>
+        </div>
+        <div id="footer-content" class="clearfix">
+            <div id="footer-container">
+                <div id="sidebar-footer-left" class="sidebar-footer">
+                    <aside class="widget-container">
+                        <div class="widget-wrapper clearfix">
+                            <h3 class="widget-title">Link Informasi</h3>
+                            <ul>
+                                <li><a href="berita.html">Berita</a></li>
+                                <li><a href="kurikulum.html">Kurikulum</a></li>
+                                <li><a href="fasilitas.html">Fasilitas</a></li>
+                                <li><a href="extrakulikuler.html">Ekstrakulikuler</a></li>
+                                <li><a href="galeri.html">Galeri</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div id="sidebar-footer-middle" class="sidebar-footer">
+                    <aside class="widget-container">
+                        <div class="widget-wrapper clearfix">
+                            <h3 class="widget-title">Lokasi Sekolah</h3>		
+                            <article class="text-widget ">
+					           <iframe class="map-area" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28186188155!2d106.75930630298996!3d-6.229571206252765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C+Daerah+Khusus+Ibukota+Jakarta!5e0!3m2!1sid!2sid!4v1525178848253"></iframe><br />
+                           </article>
+                        </div>
+                    </aside>
+                </div>
+                <article id="footer-address" class="clearfix">
+                    <h3 id="title-footer-address"><span>Sosial Media SMK Informatika</span></h3>
+                    <p>Untuk update informasi SMK Informatika juga melalui media sosial, di bawah ini link beberapa sosial media yang aktif kami update</p>
+                    <ul id="list-social" class="clearfix">
+                        <li id="icon-facebook"><a href="https://facebook.com">Facebook</a></li>
+                        <li id="icon-twitter"><a href="https://twitter.com">Twitter</a></li>
+                        <li id="icon-gplus"><a href="https://google.com">Google Plus</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            <div id="footer-copyright-content" class="clearfix">
+                <a href="#" id="logo-footer"><img src="images/logo-footer.png" data-retina="images/logo-footer-retina.png" alt="School Fun - University" /></a>
+                <ul id="nav-footer" class="clearfix">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="fasilitas.html">Fasilitas</a></li>
+                    <li><a href="kontak.html">Kontak Kami</a></li>
+                </ul>
+                <p id="text-copyright">&copy; SMK Informatika 2018</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
